@@ -9,7 +9,7 @@ import Foundation
 
 struct profileEvent: Identifiable {
     // for Identifiable protocol
-    var id: String
+    public var id: String
     
     let title: String
     let responsibilities: String

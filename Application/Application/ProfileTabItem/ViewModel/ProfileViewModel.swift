@@ -14,5 +14,3 @@ final class ProfileViewModel: ProfileViewModelProtocol {
         self.profileEventArray = profileEventArray
     }
 }
-
-

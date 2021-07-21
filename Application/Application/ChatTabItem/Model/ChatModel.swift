@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct ChatModel: Identifiable {
+public struct ChatModel: Identifiable {
     // for Identifiable protocol
-    var id: String
+    public var id: String
     
     let photo: ProfileIcon
     let responsibilities: String

@@ -7,14 +7,10 @@
 
 import SwiftUI
 
-struct ChatViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+final class ChatViewModel: ChatViewModelProtocol {
+    var chatArray: [ChatModel]
+    
+    init(chatArray: [ChatModel]) {
+        self.chatArray = chatArray
     }
 }
-
-//struct ChatViewModel_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ChatViewModel()
-//    }
-//}

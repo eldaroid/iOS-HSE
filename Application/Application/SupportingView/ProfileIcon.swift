@@ -7,7 +7,14 @@
 
 import SwiftUI
 
+//enum ColorsForProfile {
+//    public static let orangeWhite: [Color] = [Color.orange, Color.white]
+//    public static let whiteOrange: [Color] = [Color.white, Color.orange]
+//}
+
 public struct ProfileIcon: View {
+//    var colors:
+    
     public var body: some View {
         ZStack {
             Circle()

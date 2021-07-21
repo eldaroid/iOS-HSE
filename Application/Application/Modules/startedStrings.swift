@@ -25,5 +25,20 @@ enum startedStrings {
     static let searchTabItem = "Поиск"
     static let configurationTabItem = "Конфиги"
     static let emptyTabItem = "Симуляция"
+    
+    // chatString
+    static let chatResponsibilitiesFirst = "Менеджер проектов"
+    static let chatResponsibilitiesSecond = "Менеджер по закупкам"
+    static let chatResponsibilitiesThird  = "Маркетолог"
+    static let chatResponsibilitiesFourth = "Главный менеджер продукта"
+    static let chatResponsibilitiesFifth = "Бухгалтер"
+    static let chatResponsibilitiesSixth = "Копирайтер"
+    
+    static let chatDescriptionFirst = "Пересмотри пункт №4 соглашения, есть..."
+    static let chatDescriptionSecond = "Надо переутвердить это у менеджера по..."
+    static let chatDescriptionThird = "Бюджет рассчитан на месяц, можно и..."
+    static let chatDescriptionFourth = "Назначь маркетологу новую задачу..."
+    static let chatDescriptionFifth = "Бюджет утвержден"
+    static let chatDescriptionSixth = "Задание выполнено, утверждено"
 }
 
