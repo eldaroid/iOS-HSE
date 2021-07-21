@@ -21,30 +21,34 @@ struct HubView: View {
             responsibilities: startedStrings.profileResponsibilities,
             description: startedStrings.profileDescription)
         ]
+//    let chatViewModel: [ChatViewModel] = [
+//        ChatViewModel(
+//    ]
 
-    let viewModel: ProfileViewModel
+    let profileViewModel: ProfileViewModel
+//    let chatViewModel: ChatViewModel
     
     init() {
-        self.viewModel = ProfileViewModel(profileEventArray: profileEventArray)
+        self.profileViewModel = ProfileViewModel(profileEventArray: profileEventArray)
     }
     
     var body: some View {
         TabView() {
             
-            ProfileTabItemView(viewModel: viewModel)
-                .tabItem { Label("Профиль", systemImage: "person") }
+            ProfileTabItemView(viewModel: profileViewModel)
+                .tabItem { Label(startedStrings.profileTabItem , systemImage: "person") }
             
             ChatTabItemView()
-                .tabItem { Label("Чаты", systemImage: "text.bubble") }
+                .tabItem { Label(startedStrings.chatTabItem , systemImage: "text.bubble") }
             
             SearchTabItemView()
-                .tabItem { Label("Поиск", systemImage: "magnifyingglass") }
+                .tabItem { Label(startedStrings.searchTabItem , systemImage: "magnifyingglass") }
 
             ConfigurationTabItemView()
-                .tabItem { Label("Конфиги", systemImage: "gearshape") }
+                .tabItem { Label(startedStrings.configurationTabItem , systemImage: "gearshape") }
 
             JustEmptyView()
-                .tabItem { Label("Симуляция", systemImage: "tv") }
+                .tabItem { Label(startedStrings.emptyTabItem, systemImage: "tv") }
         }
 //        .ignoresSafeArea(.all)
         .accentColor(.orange)

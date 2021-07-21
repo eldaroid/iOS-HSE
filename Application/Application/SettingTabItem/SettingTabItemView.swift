@@ -17,8 +17,8 @@ struct SettingTabItemView: View {
     }
 }
 
-struct SettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingTabItemView()
-    }
-}
+//struct SettingView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SettingTabItemView()
+//    }
+//}

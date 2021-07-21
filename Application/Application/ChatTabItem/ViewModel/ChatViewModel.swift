@@ -13,8 +13,8 @@ struct ChatViewModel: View {
     }
 }
 
-struct ChatViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatViewModel()
-    }
-}
+//struct ChatViewModel_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ChatViewModel()
+//    }
+//}
