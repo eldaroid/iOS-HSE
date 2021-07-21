@@ -64,16 +64,16 @@ struct HubView: View {
         TabView() {
             
             ProfileTabItemView(viewModel: profileViewModel)
-                .tabItem { Label(startedStrings.profileTabItem , systemImage: "person") }
+                .tabItem { Label(startedStrings.profileTabItem, systemImage: "person") }
             
             ChatTabItemView(viewModel: chatViewModel)
-                .tabItem { Label(startedStrings.chatTabItem , systemImage: "text.bubble") }
+                .tabItem { Label(startedStrings.chatTabItem, systemImage: "text.bubble") }
             
             SearchTabItemView()
-                .tabItem { Label(startedStrings.searchTabItem , systemImage: "magnifyingglass") }
+                .tabItem { Label(startedStrings.searchTabItem, systemImage: "magnifyingglass") }
 
             ConfigurationTabItemView()
-                .tabItem { Label(startedStrings.configurationTabItem , systemImage: "gearshape") }
+                .tabItem { Label(startedStrings.configurationTabItem, systemImage: "gearshape") }
 
             JustEmptyView()
                 .tabItem { Label(startedStrings.emptyTabItem, systemImage: "tv") }

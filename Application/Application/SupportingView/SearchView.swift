@@ -14,22 +14,23 @@ struct SearchView: View {
                 .fill(Color(#colorLiteral(red: 0.9492763877, green: 0.4870296121, blue: 0.3417793512, alpha: 1)))
                 .frame(minWidth: 0,
                        idealWidth: .infinity,
-                    maxWidth: .infinity,
-                    minHeight: 0,
-                    idealHeight: 100,
-                    maxHeight: 100,
-                    alignment: .center)
+                       maxWidth: .infinity,
+                       minHeight: 0,
+                       idealHeight: 100,
+                       maxHeight: 100,
+                       alignment: .center)
             
             HStack {
                 search
                     .padding(.leading, 20)
-                ProfileIcon().frame(minWidth: 0,
-                                    idealWidth: 40,
-                                    maxWidth: 50,
-                                    minHeight: 0,
-                                    idealHeight: 100,
-                                    maxHeight: 60,
-                                    alignment: .center)
+                ProfileIcon()
+                    .frame(minWidth: 0,
+                           idealWidth: 40,
+                           maxWidth: 50,
+                           minHeight: 0,
+                           idealHeight: 50,
+                           maxHeight: 50,
+                           alignment: .center)
                     .padding(.trailing, 15)
             }
         }
@@ -53,8 +54,8 @@ struct SearchView: View {
     }
 }
 
-//struct SearchView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SearchView()
-//    }
-//}
+struct SearchView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchView()
+    }
+}
