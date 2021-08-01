@@ -10,7 +10,7 @@ import SwiftUI
 final class ChatViewModel: ChatViewModelProtocol {
     var chatArray: [ChatModel]
     
-    init(chatArray: [ChatModel]) {
+    init(chatArray: [ChatModel] = chatArrays) {
         self.chatArray = chatArray
     }
 }

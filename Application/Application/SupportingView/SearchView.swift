@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SearchView: View {
+    @State private var showingProfile = false
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 50.0, style: .circular)
@@ -23,17 +25,23 @@ struct SearchView: View {
             HStack {
                 search
                     .padding(.leading, 20)
-                ProfileIcon()
-                    .frame(minWidth: 0,
-                           idealWidth: 40,
-                           maxWidth: 50,
-                           minHeight: 0,
-                           idealHeight: 50,
-                           maxHeight: 50,
-                           alignment: .center)
-                    .padding(.trailing, 15)
+                
+                Button(action: { showingProfile.toggle() } ) {
+                    ProfileIcon()
+                        .frame(minWidth: 0,
+                               idealWidth: 40,
+                               maxWidth: 50,
+                               minHeight: 0,
+                               idealHeight: 50,
+                               maxHeight: 50,
+                               alignment: .center)
+                        .padding(.trailing, 15)
+                }
             }
         }
+        .sheet(isPresented: $showingProfile, content: {
+            ProfileHost()
+        })
     }
     
     @ViewBuilder

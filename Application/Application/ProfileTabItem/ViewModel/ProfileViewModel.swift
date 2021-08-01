@@ -10,7 +10,7 @@ import SwiftUI
 final class ProfileViewModel: ProfileViewModelProtocol {
     var profileEventArray: [profileEvent]
     
-    init(profileEventArray: [profileEvent]) {
+    init(profileEventArray: [profileEvent] = profileEvents) {
         self.profileEventArray = profileEventArray
     }
 }

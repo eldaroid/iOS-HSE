@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E30F26426A854D5007E7156 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30F26326A854D5007E7156 /* ProfileHost.swift */; };
+		7E30F26726A85555007E7156 /*  profileDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30F26626A85555007E7156 /*  profileDefault.swift */; };
 		7EE5B3F626A70DB9001AEDEA /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5B3F526A70DB9001AEDEA /* ChatModel.swift */; };
 		7EE64F0526A82A66009473D5 /* ChatViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE64F0426A82A66009473D5 /* ChatViewModelProtocol.swift */; };
 		7EEC487226A6EF0000441980 /* startedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC487126A6EF0000441980 /* startedStrings.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E30F26326A854D5007E7156 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		7E30F26626A85555007E7156 /*  profileDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " profileDefault.swift"; sourceTree = "<group>"; };
 		7EE5B3F526A70DB9001AEDEA /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		7EE64F0426A82A66009473D5 /* ChatViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModelProtocol.swift; sourceTree = "<group>"; };
 		7EEC487126A6EF0000441980 /* startedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startedStrings.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				7EFAE88226A6EAAF00A6AADE /* profileEvent.swift */,
+				7E30F26626A85555007E7156 /*  profileDefault.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				7EFAE88526A6EAD200A6AADE /* ProfileTabItemView.swift */,
+				7E30F26326A854D5007E7156 /* ProfileHost.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 				7EFAE8A026A6EB9B00A6AADE /* JustEmptyView.swift in Sources */,
 				7EFAE88326A6EAAF00A6AADE /* profileEvent.swift in Sources */,
 				7EE64F0526A82A66009473D5 /* ChatViewModelProtocol.swift in Sources */,
+				7E30F26726A85555007E7156 /*  profileDefault.swift in Sources */,
 				7EFAE89426A6EB4E00A6AADE /* ChatViewModel.swift in Sources */,
 				7EFAE89726A6EB6100A6AADE /* SearchTabItemView.swift in Sources */,
 				7EFAE88626A6EAD200A6AADE /* ProfileTabItemView.swift in Sources */,
@@ -302,6 +309,7 @@
 				7EFAE8A726A6EBB400A6AADE /* SearchView.swift in Sources */,
 				7EFAE89D26A6EB8700A6AADE /* ConfigurationTabItemView.swift in Sources */,
 				7EFAE88C26A6EAFC00A6AADE /* ProfileViewModelProtocol.swift in Sources */,
+				7E30F26426A854D5007E7156 /* ProfileHost.swift in Sources */,
 				7EEC487226A6EF0000441980 /* startedStrings.swift in Sources */,
 				7EFAE88926A6EAED00A6AADE /* ProfileViewModel.swift in Sources */,
 			);

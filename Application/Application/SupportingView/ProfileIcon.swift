@@ -13,24 +13,38 @@ import SwiftUI
 //}
 
 public struct ProfileIcon: View {
-//    var colors:
-    
+    var photo: String
+
+    init(with photo: String = "person") {
+        self.photo = photo
+    }
+
     public var body: some View {
         ZStack {
             Circle()
                 .fill(Color.white)
                 .shadow(radius: 15)
-            Image(systemName: "person")
-                .resizable()
-                .scaledToFit()
-                .scaleEffect(0.6)
-                .foregroundColor(Color(#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)))
+            if photo == "person" {
+                Image(systemName: photo)
+                    .resizable()
+                    .scaledToFit()
+                    .scaleEffect(0.6)
+                    .foregroundColor(Color(#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)))
+            } else {
+                Image(photo)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
+                    .overlay(Circle().strokeBorder(Color.gray, lineWidth: 5))
+//                    .clipped()
+            }
         }
     }
 }
 
 struct ProfileIcon_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileIcon()
+        ProfileIcon(with: "photo")
+//        ProfileIcon()
     }
 }
