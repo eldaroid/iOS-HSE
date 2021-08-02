@@ -7,35 +7,37 @@
 
 import SwiftUI
 
-//enum ColorsForProfile {
-//    public static let orangeWhite: [Color] = [Color.orange, Color.white]
-//    public static let whiteOrange: [Color] = [Color.white, Color.orange]
-//}
+enum ColorsForProfile {
+    public static let orangeWhite: [Color] = [Color.orange, Color.white]
+    public static let whiteOrange: [Color] = [Color.white, Color.orange]
+}
 
 public struct ProfileIcon: View {
     var photo: String
+    var colors: [Color]
 
-    init(with photo: String = "person") {
+    init(with photo: String = "person", color: [Color] = ColorsForProfile.whiteOrange) {
         self.photo = photo
+        self.colors = color
     }
 
     public var body: some View {
         ZStack {
             Circle()
-                .fill(Color.white)
+                .fill(colors[0])
                 .shadow(radius: 15)
             if photo == "person" {
                 Image(systemName: photo)
                     .resizable()
                     .scaledToFit()
                     .scaleEffect(0.6)
-                    .foregroundColor(Color(#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)))
+                    .foregroundColor(colors[1])
             } else {
                 Image(photo)
                     .resizable()
                     .scaledToFit()
                     .clipShape(Circle())
-                    .overlay(Circle().strokeBorder(Color.gray, lineWidth: 5))
+                    .overlay(Circle().strokeBorder(Color.gray, lineWidth: 3))
 //                    .clipped()
             }
         }
@@ -44,7 +46,7 @@ public struct ProfileIcon: View {
 
 struct ProfileIcon_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileIcon(with: "photo")
-//        ProfileIcon()
+//        ProfileIcon(with: "photo")
+        ProfileIcon(color: ColorsForProfile.orangeWhite)
     }
 }

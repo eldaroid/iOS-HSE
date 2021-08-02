@@ -31,9 +31,7 @@ struct ProfileTabItemView<ViewModel: ProfileViewModel>: View {
     private var profile: some View {
         HStack {
             Button(action: { showingProfile.toggle()} ) {
-                ProfileIcon()
-//                ProfileIcon(with: "photo")
-//                    .scaleEffect(2/10)
+                ProfileIcon(with: "photo")
                     .scaledToFill()
                     .frame(width: 100, height: 100, alignment: .center)
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 10))

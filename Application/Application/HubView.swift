@@ -35,7 +35,6 @@ struct HubView: View {
             JustEmptyView()
                 .tabItem { Label(startedStrings.emptyTabItem, systemImage: "tv") }
         }
-//        .ignoresSafeArea(.all)
         .accentColor(.orange)
     }
 }

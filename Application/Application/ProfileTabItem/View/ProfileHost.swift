@@ -21,7 +21,8 @@ struct ProfileHost: View {
         NavigationView {
             VStack(alignment: .leading, spacing: 10, content: {
                 HStack {
-                    ProfileIcon()
+                    ProfileIcon(with: "photo")
+                        .scaledToFill()
                         .frame(width: 130, height: 130, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .padding([.top, .leading], 15)
                     VStack(alignment: .leading, spacing: 10) {
@@ -29,10 +30,11 @@ struct ProfileHost: View {
                             .font(.title)
                             .bold()
                         
-                        Text("Tasks: \(profile.countTask)")
+                        Text("Quantity tasks: \(profile.countTask)")
                         Text("Main task: \(profile.mainTask)")
-                        Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
-                        Text("Date: ") + Text(profile.goalData, style: .date)
+                        Text("Preferences: \(profile.seasonalPhoto.rawValue)")
+//                        Picker("Preferences", selection: $)
+                        Text("Birthday date: ") + Text(profile.goalData, style: .date)
                     }
                 }
                 Divider()
